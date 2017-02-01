@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<URLGroup>
+	<URL href = "" name="Пример кнопки" />
+	<URL href = "http://vk.com" name="VK" />
+</URLGroup>

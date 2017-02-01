@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApplication1.EditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="EditWindow" Height="300" Width="300" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Closed="Window_Closed" Icon="Resources/Edit.ico" FontSize="14">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="urlName" HorizontalAlignment="Left" Height="23" Margin="24,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="238" TextChanged="urlName_TextChanged"/>
+        <TextBox x:Name="urlHref" HorizontalAlignment="Left" Height="23" Margin="24,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="238" TextChanged="urlHref_TextChanged"/>
+        <Button x:Name="save" Content="Сохранить" HorizontalAlignment="Left" Margin="24,216,0,0" VerticalAlignment="Top" Width="78" Height="25" IsEnabled="False" Click="save_Click"/>
+        <Button x:Name="saveAndGo" Content="Сохранить и перейти" HorizontalAlignment="Left" Margin="120,216,0,0" VerticalAlignment="Top" Width="142" Height="25
+                " IsEnabled="False" Click="saveAndGo_Click"/>
+        <Label x:Name="label" Content="Название ссылки:" HorizontalAlignment="Left" Margin="24,18,0,0" VerticalAlignment="Top" Height="26" Width="133"/>
+        <Label x:Name="label1" Content="Адрес ссылки:" HorizontalAlignment="Left" Margin="24,99,0,0" VerticalAlignment="Top" Height="26" Width="109"/>
+        <Label x:Name="urlHrefError" Content="" HorizontalAlignment="Left" Margin="24,158,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.538,1.433" Foreground="#FFD81717"/>
+    </Grid>
+</Window>
